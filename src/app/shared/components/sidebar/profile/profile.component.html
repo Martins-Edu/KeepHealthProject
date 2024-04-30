@@ -1,0 +1,11 @@
+<app-header />
+<app-sidebar />
+<div class="profile">  
+    <h1>Dados do Usuário</h1>
+    <p>Nome: {{ usuarioLogado?.nome }}</p>
+    <p>E-mail: {{ usuarioLogado?.emailUsuario }}</p>
+    <p>Peso: {{ usuarioLogado?.pesoUsuario + "kg"}}</p>
+    <p>Altura: {{usuarioLogado?.alturaUsuario | conversor }}</p>
+    <p>Data de nascimento: {{ usuarioLogado?.dataNascimento | date:"dd / MM / YYYY" }}</p>
+    <p>Endereço: {{ usuarioLogado?.enderecoUsuario }}</p>
+</div>

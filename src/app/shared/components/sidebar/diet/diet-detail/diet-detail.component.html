@@ -1,0 +1,25 @@
+<app-header />
+<app-sidebar />
+<div class="detalhesDieta" *ngIf="dieta">
+    <div class="dieta">
+        <div class="dietaCard">
+            <h1>{{ dieta.name }}</h1>
+            <img [src]="dieta.imageLink" alt="">
+            <span class="descricao">{{ dieta.description }}</span>
+            <br>
+            <span class="calorias">Calorias: {{ dieta.qttCalories }}</span>
+        </div>
+    </div>
+    
+    <div class="btnNavegacao">
+        <button (click)="voltar()" class="btnVoltar">Voltar</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+

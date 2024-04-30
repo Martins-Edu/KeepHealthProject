@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+* {
+    font-family: "Poppins", sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.dietaCard {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.dietaCard img {
+    width: 450px;
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 15px;
+    border: none;
+}
+
+span {
+    width: 40%;
+    font-size: 18px;
+}
+
+.descricao {
+    text-indent: 45px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.calorias {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btnNavegacao {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1, 
+.descricao, 
+.calorias {
+    color: white;
+}
+
+.btnVoltar {
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #008CBA;
+    padding: 10px 20px;
+    border-radius: 3px;
+}

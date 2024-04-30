@@ -1,0 +1,70 @@
+<div class="cadastro">
+    <form (ngSubmit)="cadastrar()" [formGroup]="formCadastro">
+        <div class="dadoFormulario">
+            <label for="nome">Nome:</label>
+            <input 
+            type="text" 
+            name="nome"
+            required
+            formControlName="nome">
+        </div>
+        <div class="dadoFormulario">
+            <label for="emailUsuario">Email:</label>
+            <input 
+            type="email" 
+            name="emailUsuario"
+            formControlName="emailUsuario">
+        </div>
+        <div class="dadoFormulario">
+            <label for="dataNascimento">Data de nascimento:</label>
+            <input 
+            type="date" 
+            name="dataNascimento"
+            formControlName="dataNascimento">
+        </div>
+        <div class="dadoFormulario">
+            <label for="senhaUsuario">Senha:</label>
+            <input 
+            type="password" 
+            name="senhaUsuario"
+            formControlName="senhaUsuario">
+        </div>
+        <div class="dadoFormulario">
+            <label for="confirmaSenha">Confirmar senha:</label>
+            <input 
+            type="password" 
+            name="confirmaSenha"
+            formControlName="confirmaSenha">
+        </div>
+        <div class="dadoFormulario">
+            <label for="pesoUsuario">Peso:</label>
+            <input 
+            type="number" 
+            name="pesoUsuario"
+            min="0"
+            formControlName="pesoUsuario">
+        </div>
+        <div class="dadoFormulario">
+            <label for="alturaUsuario">Altura (cm):</label>
+            <input 
+            type="number" 
+            name="alturaUsuario"
+            min="0"
+            formControlName="alturaUsuario">
+        </div>
+        <div class="dadoFormulario">
+            <label for="enderecoUsuario">CEP:</label>
+            <input 
+            type="number" 
+            name="enderecoUsuario"
+            min="0"
+            formControlName="enderecoUsuario">
+        </div>
+        <div class="btn_formulario">
+            <button class="btnCadastrar" type="submit">Cadastrar</button>
+        </div>
+    </form>
+    <div class="btnNavegacao">
+        <button (click)="voltar()" class="btnVoltar">Voltar</button>
+    </div>
+</div>

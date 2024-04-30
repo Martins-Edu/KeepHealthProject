@@ -1,0 +1,65 @@
+.cadastro {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.dadoFormulario {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.btn_formulario {
+    text-align: center;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button.btnCadastrar {
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 13px;
+}
+
+.btnNavegacao {
+    text-align: center;
+}
+
+button.btnVoltar {
+    background-color: #008CBA;
+    color: white;
+}
+
+button.btnVoltar:hover {
+    background-color: #005f7d;
+}

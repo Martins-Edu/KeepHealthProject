@@ -1,0 +1,12 @@
+<app-header />
+<app-sidebar />
+
+<div class="dietas">
+    <div class="dietasCard">
+        <div *ngFor="let item of arrayDietas">
+            <h1>{{ item?.name }}</h1>
+            <img [src]="item?.imageLink" alt="">
+            <button class="btnDetalhes" (click)="mostrarDetalhes(item.id)">Detalhes</button>
+        </div>
+    </div>
+</div>

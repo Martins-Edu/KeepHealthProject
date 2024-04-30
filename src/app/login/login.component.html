@@ -1,0 +1,25 @@
+<div class="login">
+    <form (ngSubmit)="entrar()" [formGroup]="formLogin">
+        <div class="dadosFormulario">
+            <label for="email">E-mail:</label>
+            <input 
+            type="email" 
+            name="email"
+            formControlName="email">      
+        </div>
+        <div class="dadosFormulario">
+            <label for="senha">Senha:</label>
+            <input 
+            type="password" 
+            name="senha"
+            formControlName="senha">      
+        </div>
+        <div class="btnFormulario">
+            <button class="entrar" type="submit">Entrar</button>
+        </div>
+    </form>
+    <div class="btnNavegacao">
+        <button (click)="cadastrarUsuario()" class="cadastrar">Cadastrar-me</button>
+        <button (click)="lembraSenha()" class="esqueciSenha">Esqueci a senha</button>
+    </div>
+</div>
